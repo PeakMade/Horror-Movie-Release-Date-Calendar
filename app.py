@@ -2,12 +2,17 @@ from flask import Flask, render_template, request, redirect, url_for
 import requests
 import calendar
 from datetime import datetime
+import os
 
 app = Flask(__name__)
 
-# Constants
-API_KEY = "4aecb6ba"
-BASE_URL = "http://www.omdbapi.com/"
+# Get configuration from environment variables (Azure compatible)
+API_KEY = os.environ.get('OMDB_API_KEY', '4aecb6ba')
+BASE_URL = os.environ.get('OMDB_BASE_URL', 'http://www.omdbapi.com/')
+
+# Validate required environment variables
+if not API_KEY:
+    raise ValueError("OMDB_API_KEY environment variable is required")
 
 def get_movie_by_title(title, year=None):
     """
@@ -406,5 +411,13 @@ def log_movies_for_2017_corrected():
     print(f"Movies logged to {log_file}")
 
 if __name__ == '__main__':
-    log_horror_movies()
-    app.run(debug=True)
+    # Azure App Service provides PORT environment variable
+    port = int(os.environ.get('PORT', 5000))
+    debug_mode = os.environ.get('FLASK_DEBUG', 'False').lower() == 'true'
+    
+    # Only run log_horror_movies in development environment
+    if os.environ.get('FLASK_ENV') != 'production':
+        log_horror_movies()
+    
+    # Azure-compatible configuration
+    app.run(host='0.0.0.0', port=port, debug=debug_mode)
