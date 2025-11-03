@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_WEBAPP_NAME: horrormoviereleasedatecalendar-fpa0efeedgcvhtbh
+  AZURE_WEBAPP_NAME: HorrorMovieReleaseDateCalendar
   PYTHON_VERSION: '3.9'
 
 jobs:
