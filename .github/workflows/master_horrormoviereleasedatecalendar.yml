@@ -63,4 +63,5 @@ jobs:
         with:
           app-name: 'HorrorMovieReleaseDateCalendar'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B14A2E0892BF4DE0BB6F59435432A644 }}
+
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_HORRORMOVIE }}
