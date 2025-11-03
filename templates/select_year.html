@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Year</title>
+</head>
+<body>
+    <h1>Select a Year</h1>
+    <form action="/select_month" method="post">
+        <label for="year">Year:</label>
+        <select name="year" id="year">
+            {% for year in range(2020, 2026) %}
+                <option value="{{ year }}">{{ year }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>

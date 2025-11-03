@@ -1,0 +1,276 @@
+Horror Movies Released from 2020 to Current Date
+============================================================
+Generated on: November 01, 2025
+Total movies found: 30
+============================================================
+
+Title: Gretel & Hansel
+Year: 2020
+Released: 31 Jan 2020
+Genre: Fantasy, Horror, Mystery
+Director: Osgood Perkins
+IMDb Rating: 5.5
+IMDb ID: tt9086228
+Plot: In a distant land, two siblings, Hansel and Gretel, wander through the woods in search of food and work. When a mysterious lady offers them a way out, they accept without thinking about the consequenc...
+--------------------------------------------------
+Title: Brahms: The Boy II
+Year: 2020
+Released: 21 Feb 2020
+Genre: Drama, Horror, Mystery
+Director: William Brent Bell
+IMDb Rating: 4.7
+IMDb ID: tt9173418
+Plot: After a family moves into the Heelshire Mansion, their young son soon makes friends with a life-like doll called Brahms.
+--------------------------------------------------
+Title: The Invisible Man
+Year: 2020
+Released: 28 Feb 2020
+Genre: Drama, Horror, Mystery
+Director: Leigh Whannell
+IMDb Rating: 7.1
+IMDb ID: tt1051906
+Plot: When Cecilia's abusive ex takes his own life and leaves her his fortune, she suspects his death was a hoax. As a series of coincidences turn lethal, Cecilia works to prove that she is being hunted by ...
+--------------------------------------------------
+Title: A Quiet Place Part II
+Year: 2020
+Released: 28 May 2021
+Genre: Drama, Horror, Sci-Fi
+Director: John Krasinski
+IMDb Rating: 7.2
+IMDb ID: tt8332922
+Plot: Following the events at home, the Abbott family now face the terrors of the outside world. Forced to venture into the unknown, they realize the creatures that hunt by sound are not the only threats lu...
+--------------------------------------------------
+Title: Malignant
+Year: 2021
+Released: 10 Sep 2021
+Genre: Crime, Horror, Mystery
+Director: James Wan
+IMDb Rating: 6.2
+IMDb ID: tt3811906
+Plot: Madison is paralyzed by shocking visions of grisly murders, and her torment worsens as she discovers that these waking dreams are in fact terrifying realities.
+--------------------------------------------------
+Title: Halloween Kills
+Year: 2021
+Released: 15 Oct 2021
+Genre: Action, Drama, Horror
+Director: David Gordon Green
+IMDb Rating: 5.5
+IMDb ID: tt10665338
+Plot: Surviving victims of Michael Myers form a vigilante mob and vow to end his reign of terror.
+--------------------------------------------------
+Title: Last Night in Soho
+Year: 2021
+Released: 29 Oct 2021
+Genre: Drama, Horror, Mystery
+Director: Edgar Wright
+IMDb Rating: 7.0
+IMDb ID: tt9639470
+Plot: Aspiring fashion designer Eloise is mysteriously able to return to 1960s London, where she encounters dazzling wannabe singer Sandie. But the glamour is not as it seems, and the dreams of the past cra...
+--------------------------------------------------
+Title: X
+Year: 2022
+Released: 18 Mar 2022
+Genre: Horror, Mystery, Thriller
+Director: Ti West
+IMDb Rating: 6.5
+IMDb ID: tt13560574
+Plot: In 1979, a group of young filmmakers set out to make an adult film in a rural Texas farm, but when their reclusive, elderly hosts catch them in the act, the crew find themselves fighting for their liv...
+--------------------------------------------------
+Title: The Black Phone
+Year: 2021
+Released: 24 Jun 2022
+Genre: Horror, Mystery, Thriller
+Director: Scott Derrickson
+IMDb Rating: 6.9
+IMDb ID: tt7144666
+Plot: After being abducted and locked in a basement, a boy starts receiving calls on a disconnected phone from the killer's previous victims.
+--------------------------------------------------
+Title: Nope
+Year: 2022
+Released: 22 Jul 2022
+Genre: Horror, Mystery, Sci-Fi
+Director: Jordan Peele
+IMDb Rating: 6.8
+IMDb ID: tt10954984
+Plot: The residents of a lonely gulch in inland California bear witness to an uncanny and chilling phenomenon.
+--------------------------------------------------
+Title: Barbarian
+Year: 2022
+Released: 09 Sep 2022
+Genre: Horror, Mystery, Thriller
+Director: Zach Cregger
+IMDb Rating: 7.0
+IMDb ID: tt15791034
+Plot: A woman staying at an Airbnb discovers that the house she has rented is not what it seems.
+--------------------------------------------------
+Title: Smile
+Year: 2022
+Released: 30 Sep 2022
+Genre: Horror, Mystery, Thriller
+Director: Parker Finn
+IMDb Rating: 6.5
+IMDb ID: tt15474916
+Plot: After witnessing a bizarre, traumatic incident involving a patient, a psychiatrist becomes increasingly convinced she is being threatened by an uncanny entity.
+--------------------------------------------------
+Title: Halloween Ends
+Year: 2022
+Released: 14 Oct 2022
+Genre: Drama, Horror, Mystery
+Director: David Gordon Green
+IMDb Rating: 5.0
+IMDb ID: tt10665342
+Plot: The plot follows the outcast Corey Cunningham who falls in love with Laurie Strode's granddaughter while a series of events, including crossing paths with Michael Myers, drives him to become a serial ...
+--------------------------------------------------
+Title: M3GAN
+Year: 2022
+Released: 06 Jan 2023
+Genre: Horror, Sci-Fi, Thriller
+Director: Gerard Johnstone
+IMDb Rating: 6.3
+IMDb ID: tt8760708
+Plot: When robotics engineer Gemma becomes the guardian of her orphaned niece, Cady, she thinks her new invention, a robotic AI, will be a good companion. However, M3GAN begins to behave in unexpected and s...
+--------------------------------------------------
+Title: Scream VI
+Year: 2023
+Released: 10 Mar 2023
+Genre: Horror, Mystery, Thriller
+Director: Matt Bettinelli-Olpin, Tyler Gillett
+IMDb Rating: 6.4
+IMDb ID: tt17663992
+Plot: A new killer follows survivors of the Ghostface murders to New York City.
+--------------------------------------------------
+Title: Evil Dead Rise
+Year: 2023
+Released: 21 Apr 2023
+Genre: Horror
+Director: Lee Cronin
+IMDb Rating: 6.5
+IMDb ID: tt13345606
+Plot: A twisted tale of two estranged sisters whose reunion is cut short by the rise of flesh-possessing demons, thrusting them into a primal battle for survival as they face the most nightmarish version of...
+--------------------------------------------------
+Title: Insidious: The Red Door
+Year: 2023
+Released: 07 Jul 2023
+Genre: Horror, Mystery, Thriller
+Director: Patrick Wilson
+IMDb Rating: 5.5
+IMDb ID: tt13405778
+Plot: The Lamberts must go deeper into The Further than ever before to put their demons to rest once and for all.
+--------------------------------------------------
+Title: Talk to Me
+Year: 2022
+Released: 28 Jul 2023
+Genre: Horror, Thriller
+Director: Danny Philippou, Michael Philippou
+IMDb Rating: 7.1
+IMDb ID: tt10638522
+Plot: When a group of friends discover how to conjure spirits using an embalmed hand, they become hooked on the new thrill, until one of them goes too far and unleashes terrifying supernatural forces.
+--------------------------------------------------
+Title: The Nun II
+Year: 2023
+Released: 08 Sep 2023
+Genre: Horror, Mystery, Thriller
+Director: Michael Chaves
+IMDb Rating: 5.6
+IMDb ID: tt10160976
+Plot: 1956 in France, a priest is horribly murdered. An evil is spreading. Once again, Sister Irene comes face-to-face with Valak, the demon nun.
+--------------------------------------------------
+Title: Saw X
+Year: 2023
+Released: 29 Sep 2023
+Genre: Horror, Mystery, Thriller
+Director: Kevin Greutert
+IMDb Rating: 6.6
+IMDb ID: tt21807222
+Plot: A sick and desperate John travels to Mexico for a risky and experimental medical procedure in hopes of a miracle cure for his cancer only to discover the entire operation is a scam to defraud the most...
+--------------------------------------------------
+Title: A Quiet Place: Day One
+Year: 2024
+Released: 28 Jun 2024
+Genre: Drama, Horror, Sci-Fi
+Director: Michael Sarnoski
+IMDb Rating: 6.3
+IMDb ID: tt13433802
+Plot: A young woman named Sam finds herself trapped in New York City during the early stages of an invasion by alien creatures with ultra-sensitive hearing.
+--------------------------------------------------
+Title: Longlegs
+Year: 2024
+Released: 12 Jul 2024
+Genre: Crime, Horror, Mystery
+Director: Osgood Perkins
+IMDb Rating: 6.6
+IMDb ID: tt23468450
+Plot: In pursuit of a serial killer, an FBI agent uncovers a series of occult clues that she must solve to end his terrifying killing spree.
+--------------------------------------------------
+Title: Alien: Romulus
+Year: 2024
+Released: 16 Aug 2024
+Genre: Horror, Sci-Fi, Thriller
+Director: Fede Alvarez
+IMDb Rating: 7.1
+IMDb ID: tt18412256
+Plot: While scavenging the deep ends of a derelict space station, a group of young space colonists come face to face with the most terrifying life form in the universe.
+--------------------------------------------------
+Title: The Substance
+Year: 2024
+Released: 20 Sep 2024
+Genre: Drama, Horror, Sci-Fi
+Director: Coralie Fargeat
+IMDb Rating: 7.2
+IMDb ID: tt17526714
+Plot: A fading celebrity takes a black-market drug: a cell-replicating substance that helps her create a younger, better version of herself.
+--------------------------------------------------
+Title: Terrifier 3
+Year: 2024
+Released: 11 Oct 2024
+Genre: Horror
+Director: Damien Leone
+IMDb Rating: 6.3
+IMDb ID: tt27911000
+Plot: Art the Clown is set to unleash chaos on the unsuspecting residents of Miles County as they peacefully drift off to sleep on Christmas Eve.
+--------------------------------------------------
+Title: Nosferatu
+Year: 2024
+Released: 25 Dec 2024
+Genre: Fantasy, Horror, Mystery
+Director: Robert Eggers
+IMDb Rating: 7.2
+IMDb ID: tt5040012
+Plot: A gothic tale of obsession between a haunted young woman and the terrifying vampire infatuated with her, causing untold horror in its wake.
+--------------------------------------------------
+Title: Wolf Man
+Year: 2025
+Released: 17 Jan 2025
+Genre: Horror
+Director: Leigh Whannell
+IMDb Rating: 5.6
+IMDb ID: tt4216984
+Plot: A family at a remote farmhouse is attacked by an unseen animal, but as the night stretches on, the father begins to transform into something unrecognizable.
+--------------------------------------------------
+Title: Final Destination: Bloodlines
+Year: 2025
+Released: 16 May 2025
+Genre: Horror, Thriller
+Director: Zach Lipovsky, Adam B. Stein
+IMDb Rating: 6.7
+IMDb ID: tt9619824
+Plot: Plagued by a recurring violent nightmare, a college student returns home to find the one person who can break the cycle and save her family from the horrific fate that inevitably awaits them.
+--------------------------------------------------
+Title: 28 Years Later
+Year: 2025
+Released: 20 Jun 2025
+Genre: Horror, Sci-Fi, Thriller
+Director: Danny Boyle
+IMDb Rating: 6.6
+IMDb ID: tt10548174
+Plot: A group of survivors of the rage virus live on a small island. When one of the group leaves the island on a mission into the mainland, he discovers secrets, wonders, and horrors that have mutated not ...
+--------------------------------------------------
+Title: The Conjuring: Last Rites
+Year: 2025
+Released: 05 Sep 2025
+Genre: Horror, Mystery, Thriller
+Director: Michael Chaves
+IMDb Rating: 6.3
+IMDb ID: tt22898462
+Plot: Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.
+--------------------------------------------------
