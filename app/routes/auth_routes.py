@@ -90,7 +90,7 @@ def auth_redirect():
     msal_app = get_msal_app()
     
     try:
-        result = msal_app.acquire_token_by_auth_code(
+        result = msal_app.acquire_token_by_authorization_code(
             code,
             scopes=SCOPES,
             redirect_uri=REDIRECT_URI
