@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Select Year</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            position: relative;
+        }
+        .auth-links {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        .auth-links a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #cc0000;
+        }
+        .flash-messages {
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .flash-success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .flash-error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .flash-info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+        }
+    </style>
 </head>
 <body>
+    <div class="auth-links">
+        {% if session.get('user_name') %}
+            <span>Welcome, {{ session['user_name'] }}!</span>
+            <a href="/auth/logout">Logout</a>
+        {% else %}
+            <a href="/auth/login">Login</a>
+        {% endif %}
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="flash-messages flash-{{ category }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
     <h1>Select a Year</h1>
     <form action="/select_month" method="post">
         <label for="year">Year:</label>

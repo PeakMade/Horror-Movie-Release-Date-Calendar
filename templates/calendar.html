@@ -98,5 +98,56 @@
     <div style="margin-top: 30px; text-align: center;">
         <a href="/" style="text-decoration: none; background-color: #cc0000; color: white; padding: 10px 20px; border-radius: 5px;">Select Different Month</a>
     </div>
+
+    <!-- Keep-Alive Mechanism for Session and Token Management -->
+    <script>
+        // Configuration
+        const PING_INTERVAL = 10 * 60 * 1000;      // 10 minutes
+        const INACTIVITY_TIMEOUT = 15 * 60 * 1000; // 15 minutes
+        
+        let lastActivity = Date.now();
+        
+        // Track user activity
+        ['mousedown', 'keydown', 'scroll', 'touchstart'].forEach(event => {
+            document.addEventListener(event, () => {
+                lastActivity = Date.now();
+            });
+        });
+        
+        // Keep-alive ping function
+        function keepAlivePing() {
+            const timeSinceActivity = Date.now() - lastActivity;
+            
+            // Only ping if user has been active within the inactivity timeout
+            if (timeSinceActivity < INACTIVITY_TIMEOUT) {
+                fetch('/auth/ping', { 
+                    credentials: 'same-origin',
+                    method: 'GET'
+                })
+                .then(response => {
+                    if (response.status === 401) {
+                        // Session expired, redirect to login
+                        console.log('Session expired, redirecting to login...');
+                        window.location.href = '/auth/login';
+                    } else if (response.ok) {
+                        console.log('Keep-alive ping successful');
+                    } else {
+                        console.warn('Keep-alive ping failed with status:', response.status);
+                    }
+                })
+                .catch(error => {
+                    console.error('Keep-alive ping error:', error);
+                });
+            } else {
+                console.log('User inactive, skipping keep-alive ping');
+            }
+        }
+        
+        // Start keep-alive interval
+        setInterval(keepAlivePing, PING_INTERVAL);
+        
+        // Initial ping after page load
+        setTimeout(keepAlivePing, 5000); // Wait 5 seconds after page load
+    </script>
 </body>
 </html>

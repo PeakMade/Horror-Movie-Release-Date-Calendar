@@ -1,10 +1,48 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, session, flash
 import requests
 import calendar
-from datetime import datetime
+from datetime import datetime, timedelta, timezone as tz
 import os
+import logging
+from pathlib import Path
+from dotenv import load_dotenv
+from flask_session import Session
+from werkzeug.middleware.proxy_fix import ProxyFix
+
+# Load environment variables
+load_dotenv()
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
+
+# Flask secret key for session management
+app.secret_key = os.environ.get('SECRET_KEY', os.urandom(32))
+
+# Session configuration (filesystem-based)
+session_dir_path = '/home/flask_session' if os.path.exists('/home') else './flask_session'
+app.config.update(
+    SESSION_TYPE='filesystem',
+    SESSION_FILE_DIR=session_dir_path,
+    SESSION_PERMANENT=True,
+    PERMANENT_SESSION_LIFETIME=timedelta(hours=8),
+    SESSION_REFRESH_EACH_REQUEST=True,  # Sliding session
+    SESSION_USE_SIGNER=False,  # Disabled for Python 3.14 compatibility
+    SESSION_COOKIE_SECURE=os.environ.get('FLASK_ENV') == 'production',
+    SESSION_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SAMESITE='Lax'
+)
+
+# Initialize Flask-Session
+Session(app)
+
+# ProxyFix for Azure reverse proxy
+app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
 
 # Get configuration from environment variables (Azure compatible)
 API_KEY = os.environ.get('OMDB_API_KEY', '4aecb6ba')
@@ -13,6 +51,44 @@ BASE_URL = os.environ.get('OMDB_BASE_URL', 'http://www.omdbapi.com/')
 # Validate required environment variables
 if not API_KEY:
     raise ValueError("OMDB_API_KEY environment variable is required")
+
+# Session cleanup function
+def cleanup_old_sessions():
+    """
+    Clean up old session files on app startup.
+    Deletes files older than 9 hours (8h session lifetime + 1h safety buffer).
+    """
+    session_dir = Path(session_dir_path)
+    
+    if not session_dir.exists():
+        logger.info(f"Session directory does not exist yet: {session_dir}")
+        return
+    
+    session_lifetime_hours = 8
+    safety_buffer_hours = 1
+    cutoff_time = datetime.now(tz.utc) - timedelta(hours=session_lifetime_hours + safety_buffer_hours)
+    
+    deleted_count = 0
+    try:
+        for session_file in session_dir.glob('*'):
+            if session_file.is_file():
+                file_mtime = datetime.fromtimestamp(session_file.stat().st_mtime, tz=tz.utc)
+                
+                if file_mtime < cutoff_time:
+                    session_file.unlink()
+                    deleted_count += 1
+        
+        if deleted_count > 0:
+            logger.info(f"Cleaned up {deleted_count} old session files")
+    except Exception as e:
+        logger.error(f"Error during session cleanup: {e}")
+
+# Run session cleanup on startup
+cleanup_old_sessions()
+
+# Register authentication blueprint
+from app.routes.auth_routes import auth_bp
+app.register_blueprint(auth_bp)
 
 def get_movie_by_title(title, year=None):
     """
@@ -147,11 +223,14 @@ def test_horror_movies_2020_to_today():
 # Route for selecting a year
 @app.route('/')
 def select_year():
+    """Main page - select year for calendar (optional authentication)."""
+    # Optional: Add @login_required decorator if you want to protect this route
     return render_template('select_year.html')
 
 # Route for selecting a month
 @app.route('/select_month', methods=['POST'])
 def select_month():
+    """Select month page (optional authentication)."""
     selected_year = request.form.get('year')
     return render_template('select_month.html', year=selected_year)
 
